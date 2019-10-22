@@ -169,7 +169,7 @@ class Logger:
             if val < threshold:
                 CostSensitiveLoss[i] = val #* (1-imbalance_ratio)
             else:
-                CostSensitiveLoss[i] = val * math.pow((imbalance_ratio * 2), 4)
+                CostSensitiveLoss[i] = val * math.pow((imbalance_ratio * 2), 3)
 
 
         if self.verbose:

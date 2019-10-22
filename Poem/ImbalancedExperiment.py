@@ -275,13 +275,13 @@ if __name__ == '__main__':
 
         res = []
         res_costSensitive = []
-        #imbalance_ratios = [0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5]
-        imbalance_ratios = [0.1, 0.2, 0.3, 0.4, 0.5]
+        imbalance_ratios = [0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5]
+        #imbalance_ratios = [0.1, 0.2, 0.3, 0.4, 0.5]
         for imbalance_ratio in imbalance_ratios:
             poem_scores = []
             poem_costSensitive_scores = []
 
-            for run in range(10):
+            for run in range(5):
                 print ("************************RUN ", run)
 
                 streamer = Logger.DataStream(dataset = dataset, verbose = False)
