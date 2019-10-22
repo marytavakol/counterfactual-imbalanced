@@ -28,4 +28,4 @@ USER "${USER}"
 
 WORKDIR "/home/${USER}"
 
-CMD ["python"]
+ENTRYPOINT [ "python3" ]
