@@ -70,8 +70,8 @@ class DatasetReader:
         return returnList
 
     def loadDataset(self, corpusName, labelSubset = None):
-        trainFilename = '../Data/%s_train.svm' % corpusName
-        testFilename = '../Data/%s_test.svm' % corpusName
+        trainFilename = 'data/%s_train.svm' % corpusName
+        testFilename = 'data/%s_test.svm' % corpusName
         if (not os.path.isfile(trainFilename)) or (not os.path.isfile(testFilename)):
             print ("DatasetReader: [Error] Invalid corpus name ", trainFilename, testFilename)
             sys.stdout.flush()
