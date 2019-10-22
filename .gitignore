@@ -1,2 +1,4 @@
 .DS_Store
 Poem/__pycache__/
+.idea/
+data/
