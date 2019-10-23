@@ -281,7 +281,7 @@ if __name__ == '__main__':
             poem_scores = []
             poem_costSensitive_scores = []
 
-            for run in range(5):
+            for run in range(10):
                 print ("************************RUN ", run)
 
                 streamer = Logger.DataStream(dataset = dataset, verbose = False)
